@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table{
+            border: 1px solid;
+        }
+        td{
+            border: 1px solid purple;
+        }
+        thead{
+            background-color: aquamarine;
+        }
+        tbody{
+            background-color: bisque;
+        }
+        tfoot{
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sesion tablas</h1>
+    </header>
+    <main>
+        <!--Tabla básica muy simple-->
+        <h2>tabla básica simple</h2>
+        <table>
+            <tr>
+                <td>perro</td>
+                <td>gato</td>
+                <td>pollo</td>
+            </tr>
+            <tr>
+                <td>10€</td>
+                <td>5€</td>
+                <td>15€</td>
+            </tr>
+        </table>
+
+        <!--Tabla completa-->
+        <table>
+            <caption>Lenguajes de programación</caption>
+            <thead>
+                <tr>
+                    <th>Lenguaje</th>
+                    <th>% Uso</th>
+                    <th>Entorno</th>
+                    <th>Diseño</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Javascript</td>
+                    <td>30%</td>
+                    <td>Frontend</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>70%</td>
+                    <td>Backend</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>15%</td>
+                    <td>IA</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">@2026 Wikipedia</td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Tabla notas</h2>
+        <table>
+            <caption>Notas</caption>
+            <thead>
+                <tr>
+                    <th>Alumno</th>
+                    <th>IA1</th>
+                    <th>IA2</th>
+                    <th>IA3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Pepe</th>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>Juan</th>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>Ana</th>
+                    <td>10</td>
+                    <td>9</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Promedio</th>
+                    <td>9.7</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer></footer>
+</body>
+</html>
